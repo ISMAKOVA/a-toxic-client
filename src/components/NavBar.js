@@ -47,7 +47,7 @@ const NavBar = observer(() => {
                                           className="my-auto">Выйти</Nav.Link>
                                 <Nav.Link as={Link} to={user.isAuth ? USER_ROUTE : '/'} className=" my-auto">
                                     <div className="avatar_container">
-                                        {avatar &&
+                                        {avatar && avatar !== '' &&
                                         <img
                                             className="avatar_img" src={process.env.REACT_APP_API_URL + avatar}
                                             alt="pic"/>
