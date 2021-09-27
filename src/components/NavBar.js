@@ -35,6 +35,7 @@ const NavBar = observer(() => {
         <Navbar expand="lg" className="bg_color pt-3">
             <Container>
                 <Navbar.Brand as={Link} to={isLogin ? LOGIN_ROUTE : MAIN_ROUTE} className="logo">a_toxic</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     {
                         user.isAuth ?
